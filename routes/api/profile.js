@@ -166,7 +166,7 @@ router.post('/experience', passport.authenticate('jwt', { session:false }), (req
     const newExp = {
       title: req.body.title,
       company: req.body.company,
-      locaiton: req.body.location,
+      location: req.body.location,
       from: req.body.from,
       to: req.body.to,
       current: req.body.current,

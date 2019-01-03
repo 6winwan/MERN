@@ -37,8 +37,8 @@ const profileSchema = new Schema({
   experience: [
     {
       title: {
-      type: String,
-      required: true
+        type: String,
+        required: true
       },
       company: {
         type: String,
@@ -53,7 +53,6 @@ const profileSchema = new Schema({
       },
       to: {
         type: Date,
-        required: true
       },
       current: {
         type: Boolean,
@@ -84,7 +83,6 @@ const profileSchema = new Schema({
       },
       to: {
         type: Date,
-        required: true
       },
       current: {
         type: Boolean,
