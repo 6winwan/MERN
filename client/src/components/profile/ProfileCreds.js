@@ -12,7 +12,7 @@ class ProfileCred extends Component {
           <Moment format="YYYY/MM/DD">{exp.from}</Moment>
           {exp.to === null? (' Now') : (<Moment format="YYYY/MM/DD">{exp.to}</Moment>)}
         </p>
-        <p><strong>Position:</strong> {exp.title}></p>
+        <p><strong>Position:</strong> {exp.title}</p>
         <p>
           {exp.location === '' ? null : (<span><strong>Location: </strong>{exp.location}</span>)}
         </p>
@@ -29,9 +29,9 @@ class ProfileCred extends Component {
           <Moment format="YYYY/MM/DD">{edu.from}</Moment>
           {edu.to === null? (' Now') : (<Moment format="YYYY/MM/DD">{edu.to}</Moment>)}
         </p>
-        <p><strong>Degree</strong> {edu.title}></p>
+        <p><strong>Degree</strong> {edu.title}</p>
         <p>
-          <strong>Field of Study:</strong> {edu.fieldofstudy}>
+          <strong>Field of Study:</strong> {edu.fieldofstudy}
         </p>
         <p>
           {edu.description === '' ? null : (<span><strong>Description: </strong> {edu.description}</span>)}
