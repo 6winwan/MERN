@@ -18,23 +18,23 @@ class Navbar extends Component {
       <ul className="navbar-nav ml-auto">
         <li className="nav-item">
           <Link className="nav-link" to="/feed">
-            Post Feed
+            <i class="fas fa-clipboard-list"></i>
+            <span> Post Feed</span>
           </Link>
         </li>
         <li className="nav-item">
           <Link className="nav-link" to="/dashboard">
-            Dashboard
+          <i class="fas fa-user-alt"></i>
+          <span className="font-weight-bold"> {user.name}</span>' Dashboard 
           </Link>
         </li>
-        <li className="nav-item">
-          
+        <li className="nav-item"> 
           <a 
             href="/" 
             onClick={this.onLogoutClick.bind(this)}  className="nav-link">
-            {user.name}
             <img 
               className="rounded-circle"
-              src={user.avartar} 
+              src={user.avatar} 
               alt={user.name} 
               style={{ width: '25px', marginLeft:'8px', marginRight: '5px'}} 
               title="You must have a Gravatar connted to your email to display an image"/>
@@ -48,21 +48,25 @@ class Navbar extends Component {
       <ul className="navbar-nav ml-auto">
         <li className="nav-item">
           <Link className="nav-link" to="/register">
-            Sign Up
+            <i className="fas fa-user-plus"></i>
+            <span> Register</span>
           </Link>
         </li>
         <li className="nav-item">
           <Link className="nav-link" to="/login">
-            Login
+            <i className="fas fa-sign-in-alt"></i>
+            <span> Login</span>
           </Link>
         </li>
       </ul>
     );
 
     return (
-      <nav className="navbar navbar-expand-sm navbar-dark bg-dark mb-4">
+      <nav className="navbar navbar-expand-sm navbar-light bg-info mb-4">
       <div className="container">
-        <Link className="navbar-brand" to="/">DevConnector
+        <Link className="navbar-brand" to="/">
+        <i class="fas fa-laptop-code"></i>
+        <span> Developers MeetUp</span> 
         </Link>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile-nav">
           <span className="navbar-toggler-icon"></span>
@@ -73,7 +77,8 @@ class Navbar extends Component {
             <li className="nav-item">
               <Link className="nav-link" to="/profiles">
               {' '}
-              Developers
+              <i className="fas fa-users"></i>
+              <span> Developers</span>
               </Link>
             </li>
           </ul>

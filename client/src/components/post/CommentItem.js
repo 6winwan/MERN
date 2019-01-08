@@ -12,7 +12,7 @@ onDeleteClick(postId, commentId) {
   render() {
     const { comment, postId, auth } = this.props;
     return (
-      <div className="card card-body mb-3">
+      <div className="card card-body mb-3 bg-light">
         <div className="row">
           <div className="col-md-2">
             <a href="profile.html">

@@ -138,17 +138,17 @@ class CreateProfile extends Component {
             <div className="col-md-8 m-auto">
               <h1 className="display-4 text-center">Create Your Profile</h1>
               <p className="lead text-center">
-                Let's get some information to make your Profile
+                Fill in your information to make your Profile
               </p>
               <small className="d-block pb-3">(*) = required fields</small>
               <form onSubmit={this.onSubmit}>
                 <TextFieldGroup 
-                  placeholder="* Profile Handle"
+                  placeholder="* Profile Username"
                   name="handle"
                   value={this.state.handle}
                   onChange={this.onChange}
                   error={errors.handle}
-                  info="A unique handle for your profile URL. Your full name, company name, nickname, etc"
+                  info="User name"
                 />
                 <SelectListGroup 
                   placeholder="Status"
@@ -214,16 +214,16 @@ class CreateProfile extends Component {
                       this.setState(prevState => ({
                        displaySocialInputs: !prevState.displaySocialInputs
                       }));
-                    }} className="btn btn-secondary">
-                    Add Social Netowrk Links
+                    }} className="btn btn-warning">
+                    Social Netowrk Links <span className="text-muted">(Optional)</span>
                   </button>
-                  <span className="text-muted">  Optional</span>
+                  
                 </div>
                 {socialInputs}
                 <input 
                   type="submit" 
                   value="Submit" 
-                  className="btn btn-info btn-block mt-4"
+                  className="btn btn-success btn-block mt-4"
                 />
               </form>
             </div>

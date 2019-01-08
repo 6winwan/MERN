@@ -189,7 +189,7 @@ class CreateProfile extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-8 m-auto">
-              <Link to='/dashboard' className="btn btn-light">
+              <Link to='/dashboard' className="btn btn-dark">
                 Go Back
               </Link>
               <h1 className="display-4 text-center">Edit Profile</h1>
@@ -267,16 +267,15 @@ class CreateProfile extends Component {
                       this.setState(prevState => ({
                        displaySocialInputs: !prevState.displaySocialInputs
                       }));
-                    }} className="btn btn-secondary">
-                    Add Social Netowrk Links
+                    }} className="btn btn-warning">
+                    Social Netowrk Links<span className="text-muted"> (Optional)</span>
                   </button>
-                  <span className="text-muted">  Optional</span>
                 </div>
                 {socialInputs}
                 <input 
                   type="submit" 
                   value="Submit" 
-                  className="btn btn-info btn-block mt-4"
+                  className="btn btn-success btn-block mt-4"
                 />
               </form>
             </div>

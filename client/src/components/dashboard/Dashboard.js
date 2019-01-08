@@ -30,7 +30,7 @@ class Dashboard extends Component {
       if(Object.keys(profile).length  > 0) {
         dashboardContent = (
           <div>
-            <p className="lead text-muted">Welcome<Link to={`/profile/${profile.handle}`}> {user.name}</Link>
+            <p className="lead text-muted text-center">Welcome<Link to={`/profile/${profile.handle}`}> {user.name}</Link>
             </p>
             <ProfileActions />
             <Experience experience={profile.experience}/>
@@ -42,10 +42,10 @@ class Dashboard extends Component {
       } else {
         //User is logged in but has no Pofile
         dashboardContent = (
-          <div>
-            <p className="lead text-muted">Welcome {user.name}</p>
-            <p>You have no yet setup a profile, Please add some info</p>
-            <Link to="/create-profile" className="btn btn-lg btn-info">
+          <div className="text-center">
+            <p className="lead text-muted">Welcome {user.name}<br/><br/></p>
+            <h3>You have not yet setup a profile,<br/><br/> Please add some info<br/><br/><br/></h3>
+            <Link to="/create-profile" className="btn btn-lg btn-success">
               Create Profile
             </Link>
           </div>
@@ -57,7 +57,7 @@ class Dashboard extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <h1 className="display-4">Dashboard</h1>
+              <h1 className="display-4 text-center">Dashboard</h1>
               {dashboardContent}
             </div>
           </div>

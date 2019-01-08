@@ -31,8 +31,8 @@ class Profile extends Component {
       profileContent = (
         <div>
           <div className="row">
-            <div className="col-md-6">
-              <Link to="/profiles" className="btn btn-light mlb-3 float-left">
+            <div className="col-md-6 mb-3">
+              <Link to="/profiles" className="btn btn-dark mlb-3 float-left">
               Back to Profiles
               </Link>
             </div>

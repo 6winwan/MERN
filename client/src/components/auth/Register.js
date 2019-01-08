@@ -56,8 +56,8 @@ class Register extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-8 m-auto">
-              <h1 className="display-4 text-center">Sign Up</h1>
-              <p className="lead text-center">Create your DevConnector account</p>
+              <h1 className="display-4 text-center">Register</h1>
+              <p className="lead text-center">Create your Developer Meet-Up Account</p>
               <form onSubmit={this.onSubmit}>
 
                 <TextFieldGroup
@@ -75,11 +75,11 @@ class Register extends Component {
                   value={this.state.email}
                   onChange={this.onChange}
                   error={errors.email}
-                  info="This site uses Gravatar so if you wat a profile iamage, use a Gravatar Email"
+                  info="If you wat a profile iamage, use a Gravatar Email"
                 />
 
                 <TextFieldGroup
-                  placeholder="Password"
+                  placeholder="Password (at least 6 Characters)"
                   name="password"
                   type="password"
                   value={this.state.password}
@@ -96,7 +96,7 @@ class Register extends Component {
                   error={errors.password2}
                 />
 
-                <input type="submit" className="btn btn-info btn-block mt-4" />
+                <input type="submit" className="btn btn-success btn-block mt-4" />
               </form>
             </div>
           </div>

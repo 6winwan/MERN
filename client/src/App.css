@@ -4,7 +4,7 @@ img {
 
 .landing {
   position: relative;
-  background: url('./img/showcase.jpg') no-repeat;
+  background: url('./img/landing.jpeg') no-repeat;
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -36,4 +36,21 @@ img {
 
 .form-control::placeholder {
   color: #bbb !important;
+}
+
+.btn-primary2 {
+  font-size: 13px;
+  color: rgba(21, 90, 143, 0.75);
+  letter-spacing: 1px;
+  line-height: 15px;
+  border: 2px solid rgba(21, 90, 145, 0.75);
+  border-radius: 10px;
+  background: transparent;
+  transition: all 0.3s ease 0s;
+}
+
+.btn-primary2:hover {
+  color: #FFF;
+  background: rgba(58, 133, 191, 0.75);
+  border: 2px solid rgba(58, 133, 191, 0.75);
 }

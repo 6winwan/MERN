@@ -26,9 +26,9 @@ class Experience extends Component {
     ))
     return (
       <div>
-        <h4 className="mb-4">Experience Credentails</h4>
+        <h4 className="mb-4">Experience</h4>
           <table className="table">
-            <thead>
+           <thead className="thead-light">
               <tr>
                 <th className="w-25">Company</th>
                 <th className="w-25">Title</th>
